@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-
+import "./Card.css";
 export default class Form extends Component {
   state = { userName: '' };
   handleSubmit = async (e) => {
@@ -18,7 +18,7 @@ export default class Form extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit} >
           <input
             type='text'
             value={this.state.userName}
